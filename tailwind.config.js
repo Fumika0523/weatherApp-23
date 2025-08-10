@@ -7,7 +7,11 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        super: "10rem"   // optional alias for text-[10rem]
+      }
+    },
   },
   plugins: [
      require('tailwind-scrollbar-hide')
